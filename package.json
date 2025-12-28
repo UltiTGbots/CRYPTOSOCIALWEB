@@ -1,0 +1,15 @@
+{
+  "name": "reeltokz-monorepo",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "web"
+  ],
+  "scripts": {
+    "dev:backend": "npm --workspace backend run dev || npm --workspace backend run start",
+    "install:all": "npm install --workspaces",
+    "dev:web": "npm --workspace web run dev",
+    "build:web": "npm --workspace web run build",
+    "start:web": "npm --workspace web run start"
+  }
+}
